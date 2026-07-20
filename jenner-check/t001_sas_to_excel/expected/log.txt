@@ -1,0 +1,31 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library PAD uses 1 concatenated paths.
+NOTE: DATA pad.class
+
+
+NOTE: Read 12 rows from sashelp.class.
+NOTE: Wrote pad.class (12 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA pad.cars
+
+
+NOTE: Read 10 rows from sashelp.cars.
+NOTE: Wrote pad.cars (10 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable DATA_LST = CARS|CLASS
+NOTE: PROC SQL statement used.
+CARS|CLASS
+NOTE: PROC EXPORT data=pad.CARS outfile=./CARS.xlsx
+
+NOTE: Exported 10 rows to ./CARS.xlsx.
+NOTE: PROC EXPORT data=pad.class outfile=./CLASS.xlsx
+
+NOTE: Exported 12 rows to ./CLASS.xlsx.
