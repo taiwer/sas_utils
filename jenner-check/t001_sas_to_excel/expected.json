@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-20T23:34:00Z",
+  "_captured_run_id": "r_cde7076b83854358856b23d7adae14ee",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Macro variable DATA_LST = CARS|CLASS",
+    "PROC EXPORT data=pad.CARS outfile=./CARS.xlsx",
+    "Exported 10 rows to ./CARS.xlsx.",
+    "Exported 12 rows to ./CLASS.xlsx."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

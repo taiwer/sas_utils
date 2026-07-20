@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_sas_to_excel",
+  "source_file": "sas_to_excel.sas",
+  "source_blob_sha": "2978deeae89ca109e266707e52db33fddac960fd",
+  "source_commit": "4e3ad16634f36a9ede36d374eb179ec6d33c9a62",
+  "notes": "Batch-exports every dataset in a libref to Excel: PROC SQL reads memname from sashelp.vtable into &data_lst, then the %re_ad macro loops and PROC EXPORT (dbms=excel) each one. Kept the SQL enumeration and %re_ad macro verbatim. Substituted the external libname pad (original pointed at a local Windows path) with two small sashelp-derived sample datasets, and rewrote the hardcoded absolute outfile path to a relative ./&dsnm..xlsx. Runs ok, exit_code 0, produces CARS.xlsx and CLASS.xlsx."
+}
